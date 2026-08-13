@@ -209,6 +209,27 @@ section { padding: 88px 0; }
   box-shadow: var(--shadow);
   border: 1px solid var(--border);
 }
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: -4px 0 18px;
+}
+.tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 14px;
+  border-radius: 999px;
+  background: var(--sage-light);
+  color: var(--sage-dark);
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+.tag-symbol {
+  padding: 5px 12px;
+  background: var(--terracotta);
+  color: #fff;
+}
 .credentials {
   list-style: none;
   padding: 0;
@@ -286,6 +307,21 @@ section { padding: 88px 0; }
   margin-top: 20px;
   font-style: italic;
 }
+
+/* ===== Workshops & Retreats ===== */
+.workshop-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.workshop-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 40px 36px;
+  box-shadow: var(--shadow);
+}
+.workshop-card h3 { color: var(--sage-dark); }
 
 /* ===== Pricing ===== */
 .pricing { background: #fff; }
@@ -436,6 +472,7 @@ section { padding: 88px 0; }
   .about-inner { grid-template-columns: 1fr; }
   .portrait-frame { max-width: 320px; margin: 0 auto; }
   .class-grid { grid-template-columns: repeat(2, 1fr); }
+  .workshop-grid { grid-template-columns: 1fr; }
   .pricing-grid { grid-template-columns: 1fr; max-width: 420px; margin: 0 auto; }
   .price-card.featured { transform: none; }
   .contact-inner { grid-template-columns: 1fr; }
